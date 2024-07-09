@@ -1,4 +1,4 @@
-@import url(../CSS/reset.css);
+@import url(./reset.css);
 
 
 .wrapper {
@@ -98,7 +98,7 @@
 
 }
 
-.headerdown li a:hover{
+.headerdown li a:hover {
     background-color: #FFF1E4;
     color: black;
 }
@@ -110,44 +110,45 @@
     background-color: #FFF1E4;
     padding: 80px 0;
 }
-.main-sel-white{
+
+.main-sel-white {
     background-color: white;
     width: 700px;
-    
+
     margin: 0 auto;
     padding: 50px;
     box-sizing: border-box;
     border-radius: 40px;
 }
 
-.main-sel-white>p{
+.main-sel-white>p {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.main-sel-white ul{
+.main-sel-white ul {
     line-height: 1.6;
 }
 
-.arrow{
+.arrow {
     border: 2px solid #F3DAC4;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: white ;
+    background-color: white;
     border-radius: 12px;
 }
 
-.answer{
+.answer {
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border:3px solid #CDA581;
+    border: 3px solid #CDA581;
     border-radius: 12px;
 }
 
@@ -195,8 +196,8 @@
     color: black;
 }
 
-.footerupaboutus a:hover{
-    text-decoration:underline
+.footerupaboutus a:hover {
+    text-decoration: underline
 }
 
 .footerupinformation {
@@ -212,8 +213,8 @@
     color: black;
 }
 
-.footerupinformation a:hover{
-    text-decoration:underline
+.footerupinformation a:hover {
+    text-decoration: underline
 }
 
 .footerupcontact {

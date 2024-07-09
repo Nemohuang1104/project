@@ -1,4 +1,4 @@
-@import url(../CSS/reset.css);
+@import url(./reset.css);
 
 
 .wrapper {
@@ -132,19 +132,19 @@
 .main-top-bigpicture {
     width: 1000px;
     height: 550px;
-    
+
 }
 
 .list {
     /* border: 1px solid red; */
     display: flex;
     width: 1000px;
-    
-    
+
+
 }
 
 .listleft {
-    
+
     width: 120px;
     height: 450px;
 
@@ -174,7 +174,7 @@
 
 .listright {
     width: 800px;
-    
+
 }
 
 
@@ -194,31 +194,32 @@
     border-radius: 12px;
 }
 
-.name{
+.name {
     font-size: 18px;
-    
-   
+
+
 }
 
-.capacity{
+.capacity {
     font-size: 16px;
     margin-bottom: 20px;
-   
+
 }
 
-.taste{
+.taste {
     font-size: 12px;
     color: #7F7F7F;
-    padding: 0 10px ;
+    padding: 0 10px;
     margin-bottom: 20px;
 }
-.price{
-font-size: 18px;
-padding: 0 10px ;
-margin-bottom: 20px;
+
+.price {
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 
-.listfull a{
+.listfull a {
     display: flex;
     width: 240px;
     height: 40px;
@@ -233,68 +234,70 @@ margin-bottom: 20px;
     background-color: #FFF1E4;
 
 }
-.listfull a:hover{
-   background-color: #CDA581;
-   color: white;
+
+.listfull a:hover {
+    background-color: #CDA581;
+    color: white;
 }
 
 
 .listone {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
+    padding: 0 10px;
+
 }
 
 .listtwo {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
+    padding: 0 10px;
+
 }
 
 .listthree {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
+    padding: 0 10px;
+
 }
 
 
 .listfour {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
+    padding: 0 10px;
+
 }
 
 
 .listfive {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
-} 
+    padding: 0 10px;
+
+}
+
 .listsix {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
-} 
+    padding: 0 10px;
+
+}
 
 .listseven {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
-} 
+    padding: 0 10px;
+
+}
 
 .listeight {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px ;
-    
-} 
+    padding: 0 10px;
+
+}
 
 /* ------------頁尾上面開始 ----------*/
 
@@ -339,8 +342,8 @@ margin-bottom: 20px;
     color: black;
 }
 
-.footerupaboutus a:hover{
-    text-decoration:underline
+.footerupaboutus a:hover {
+    text-decoration: underline
 }
 
 .footerupinformation {
@@ -354,8 +357,8 @@ margin-bottom: 20px;
     color: black;
 }
 
-.footerupinformation a:hover{
-    text-decoration:underline
+.footerupinformation a:hover {
+    text-decoration: underline
 }
 
 .footerupcontact {

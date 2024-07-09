@@ -1,4 +1,4 @@
-@import url(../CSS/reset.css);
+@import url(./reset.css);
 
 
 .wrapper {
@@ -100,7 +100,7 @@
 
 }
 
-.headerdown li a:hover{
+.headerdown li a:hover {
     background-color: #FFF1E4;
     color: black;
 }
@@ -111,7 +111,8 @@
 .main-sel {
     background-color: #FFF1E4;
 }
-.main-sel-white{
+
+.main-sel-white {
     background-color: white;
     width: 550px;
     height: 650px;
@@ -119,12 +120,13 @@
     padding: 50px;
     box-sizing: border-box;
 }
+
 .logintop {
     display: block;
     border-bottom: 1px solid black;
-    
+
     line-height: 4.0;
-    
+
 }
 
 
@@ -135,58 +137,59 @@
     text-decoration: underline;
     font-size: 18px;
     padding-right: 10px;
-    
+
 }
- .jointext{
+
+.jointext {
     color: black;
     text-decoration: none;
     font-size: 18px;
- }
+}
 
 
 
 
-.fastlogin p{
+.fastlogin p {
     line-height: 4.0;
-    
+
     font-size: 18px;
 }
 
 
 
-.fastlogin a{
+.fastlogin a {
     /* border: 1px solid black; */
     display: block;
-    
+
     background-color: #F3DAC4;
     color: white;
     text-decoration: none;
-    
+
     margin-bottom: 40px;
 }
 
-.forlink{
+.forlink {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0 ;
+    padding: 5px 0;
     padding-left: 10px;
 }
 
-.logincenter{
+.logincenter {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logincenter span{
+.logincenter span {
     line-height: 4.0;
-    padding-right:50px;
+    padding-right: 50px;
     font-size: 18px;
 }
 
-.logincenter a{
+.logincenter a {
     display: block;
     height: 30px;
     width: 80px;
@@ -198,53 +201,53 @@
 }
 
 
-.password{
+.password {
     line-height: 4.0;
     /* padding:0 50px; */
     font-size: 18px;
-    display:block;
+    display: block;
 }
 
-.passwordone{
+.passwordone {
     display: block;
     width: 446px;
     height: 60px;
     border: none;
     border-bottom: 1px solid #D8D8D8;
-    outline:none;
+    outline: none;
 }
 
-.passwordtwo{
+.passwordtwo {
     display: block;
     width: 446px;
     height: 60px;
     border: none;
     border-bottom: 1px solid #D8D8D8;
-    outline:none;
+    outline: none;
 }
 
-.passwordthree{
+.passwordthree {
     width: 446px;
     height: 40px;
     border: none;
     border: 1px solid #D8D8D8;
-    outline:none;
+    outline: none;
     background-color: white;
 }
 
 
 
 
-.passwordthree:hover{
+.passwordthree:hover {
     background-color: #D8D8D8;
 }
 
-.logincenterhover:hover{
+.logincenterhover:hover {
     background-color: #eeeeee;
 }
 
 
-.forlink:hover{
+.forlink:hover {
     background-color: #CDA581;
 }
 
@@ -292,8 +295,8 @@
     color: black;
 }
 
-.footerupaboutus a:hover{
-    text-decoration:underline
+.footerupaboutus a:hover {
+    text-decoration: underline
 }
 
 .footerupinformation {
@@ -309,8 +312,8 @@
     color: black;
 }
 
-.footerupinformation a:hover{
-    text-decoration:underline
+.footerupinformation a:hover {
+    text-decoration: underline
 }
 
 .footerupcontact {

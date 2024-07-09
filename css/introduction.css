@@ -1,4 +1,4 @@
-@import url(../CSS/reset.css);
+@import url(./reset.css);
 
 .wrapper {
     font-size: 16px;
@@ -96,7 +96,7 @@
     padding-left: 20px;
 }
 
-.headerdown li a:hover{
+.headerdown li a:hover {
     background-color: #FFF1E4;
     color: black;
 }
@@ -256,6 +256,7 @@
     margin: 0 20px;
 
 }
+
 /* ---------材料選用開始-_----- */
 
 .product1 {
@@ -264,24 +265,24 @@
     padding-bottom: 80px;
 }
 
-.product1 h3{
-   
+.product1 h3 {
+
     font-size: 38px;
     line-height: 1.6;
-    border-bottom:3px dashed black;
+    border-bottom: 3px dashed black;
     width: 180px;
     margin: 0 auto;
     margin-bottom: 40px;
-    
+
 }
 
-.product1 p{
+.product1 p {
     text-align: center;
     line-height: 1.6;
     margin-bottom: 40px;
 }
 
-.product1 img{
+.product1 img {
     width: 350px;
     height: 250px;
     border-radius: 550px;
@@ -333,8 +334,8 @@
     color: black;
 }
 
-.footerupaboutus a:hover{
-    text-decoration:underline
+.footerupaboutus a:hover {
+    text-decoration: underline
 }
 
 .footerupinformation {
@@ -350,8 +351,8 @@
     color: black;
 }
 
-.footerupinformation a:hover{
-    text-decoration:underline
+.footerupinformation a:hover {
+    text-decoration: underline
 }
 
 
