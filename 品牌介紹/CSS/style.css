@@ -1,0 +1,389 @@
+@import url(../CSS/reset.css);
+
+.wrapper {
+    font-size: 16px;
+    background-color: #F3DAC4;
+    font-family: "segoe script", "Noto Sans TC";
+    width: 100%;
+}
+
+.header {}
+
+.headerup {
+    padding-top: 10px;
+}
+
+.headerup p {
+
+    text-align: center;
+
+}
+
+.headerdown {
+    display: flex;
+    width: 1240px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding-bottom: 5px;
+
+
+}
+
+
+
+
+.mainlogo {}
+
+.mainlogo img {
+    padding-left: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+.headerdown ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    /* margin-left: 30px; */
+
+
+
+}
+
+.headerdown li {
+
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #CDA581;
+    align-self: auto;
+
+}
+
+.headerdown li a {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberlogo {
+    margin-left: auto;
+    /* padding-right: 20px; */
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.memberlogo img {}
+
+.shoppinglogo {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.shoppinglogo img {
+    padding-left: 20px;
+}
+
+.headerdown li a:hover{
+    background-color: #FFF1E4;
+    color: black;
+}
+
+/* ----------------主頁開始---------------- */
+.main-sel {
+    background-color: #FFF1E4;
+}
+
+.main-white {
+    /* border:  1px solid red; */
+    width: 1000px;
+    /* background-color: white; */
+    margin: 0 auto;
+    padding: 100px;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+/* ---------品牌理念---------- */
+
+.concept {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 60px;
+    margin-bottom: 120px;
+
+
+
+
+}
+
+.conceptname {
+    /* border: 1px solid black; */
+    padding-top: 60px;
+
+
+}
+
+
+.conceptname h3 {
+    font-size: 38px;
+    border-bottom: 3px dashed black;
+    line-height: 1.6;
+    text-align: center;
+    width: 180px;
+    margin-bottom: 40px;
+
+
+
+}
+
+.conceptname p {
+    font-size: 18px;
+    line-height: 1.6;
+
+
+
+
+}
+
+.concept img {
+    width: 400px;
+    height: 400px;
+    /* float: right; */
+
+    border-radius: 50% 20% / 10% 40%;
+
+    box-sizing: border-box;
+    align-items: center;
+
+    margin-left: 30px;
+
+}
+
+/* --環保材質開始-- */
+
+.environmental {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.environmental h3 {
+    border-bottom: 3px dashed black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 38px;
+    width: 250px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.environmental ul {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+.environmental li {
+    /* border: 1px solid black; */
+    width: 300px;
+    text-align: center;
+
+}
+
+.environmental li img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+}
+
+.environmental h4 {
+    margin-bottom: 20px;
+
+}
+
+
+
+/* ------材料選用開始------- */
+
+.material {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+
+.material h3 {
+    font-size: 38px;
+    border-bottom: 3px dashed black;
+    width: 180px;
+    margin: 0 auto;
+
+    margin-bottom: 40px;
+
+}
+
+.material p {
+    margin: 0 auto;
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+}
+
+.material img {
+
+    width: 400px;
+    height: 300px;
+    border-radius: 550px;
+    margin: 0 20px;
+
+}
+/* ---------材料選用開始-_----- */
+
+.product1 {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.product1 h3{
+   
+    font-size: 38px;
+    line-height: 1.6;
+    border-bottom:3px dashed black;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+.product1 p{
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.product1 img{
+    width: 350px;
+    height: 250px;
+    border-radius: 550px;
+    margin: 0 10px;
+}
+
+
+
+/* -----------頁尾上面開始 ----------*/
+
+.footerup {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footerup p {}
+
+.footerup a {}
+
+.footerup>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.footerupaboutus {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin-right: 20px;
+
+}
+
+.footerupaboutus a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerupaboutus a:hover{
+    text-decoration:underline
+}
+
+.footerupinformation {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+
+
+}
+
+.footerupinformation a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerupinformation a:hover{
+    text-decoration:underline
+}
+
+
+.footerupcontact {
+    line-height: 1.6;
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
+.footerupcontact a {
+    /* border: 1px solid red; */
+
+
+}
+
+.footerupcontact img {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+
+
+/* -------頁尾下面開始--------- */
+
+.footerdown {
+    padding-bottom: 20px;
+}
+
+.footerdown p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+}

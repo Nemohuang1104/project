@@ -1,0 +1,392 @@
+@import url(../CSS/reset.css);
+
+
+.wrapper {
+    font-size: 16px;
+    background-color: #F3DAC4;
+    font-family: "segoe script", "Noto Sans TC";
+    width: 100%;
+}
+
+/* ------------頁首開始 ----------*/
+
+.header {}
+
+.headerup {
+    padding-top: 10px;
+}
+
+.headerup p {
+
+    text-align: center;
+
+}
+
+.headerdown {
+    display: flex;
+    width: 1240px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding-bottom: 5px;
+
+
+}
+
+
+
+
+.mainlogo {}
+
+.mainlogo img {
+    padding-left: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+.headerdown ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    /* margin-left: 30px; */
+
+}
+
+.headerdown li {
+
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #CDA581;
+    align-self: auto;
+
+}
+
+.headerdown li a {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberlogo {
+    margin-left: auto;
+    /* padding-right: 20px; */
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.memberlogo img {}
+
+.shoppinglogo {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.shoppinglogo img {
+    padding-left: 20px;
+
+}
+
+.headerdown li a:hover {
+    background-color: #FFF1E4;
+    color: black;
+}
+
+
+
+/* ----------主頁開始 ------- */
+.main-sel {
+    background-color: #FFF1E4;
+    padding: 80px 0;
+
+}
+
+.white {
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.main-sel-white p {
+    text-align: center;
+    font-size: 40px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #F3DAC4;
+    line-height: 1.6;
+    color: white;
+}
+
+.main-top-bigpicture {
+    width: 1000px;
+    height: 550px;
+    
+}
+
+.list {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 1000px;
+    
+    
+}
+
+.listleft {
+    
+    width: 120px;
+    height: 450px;
+
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    /* border: 1px solid red; */
+    margin-right: 10px;
+}
+
+.listleft a {
+    display: block;
+    border-bottom: 1px solid #CDA581;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 4.0;
+    margin-bottom: 5px;
+}
+
+.listleft a:hover {
+
+    background-color: #FFF1E4;
+    border-radius: 4px;
+
+}
+
+.listright {
+    width: 800px;
+    
+}
+
+
+.listfull {
+    /* border: 1px solid red; */
+    width: 260px;
+    display: block;
+    float: left;
+}
+
+.listfull img {
+    width: 240px;
+    height: 260px;
+    margin: 0 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.name{
+    font-size: 18px;
+    
+   
+}
+
+.capacity{
+    font-size: 16px;
+    margin-bottom: 20px;
+   
+}
+
+.taste{
+    font-size: 12px;
+    color: #7F7F7F;
+    padding: 0 10px ;
+    margin-bottom: 20px;
+}
+.price{
+font-size: 18px;
+padding: 0 10px ;
+margin-bottom: 20px;
+}
+
+.listfull a{
+    display: flex;
+    width: 240px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #CDA581;
+    border-radius: 12px;
+    color: #7F7F7F;
+    background-color: #FFF1E4;
+
+}
+.listfull a:hover{
+   background-color: #CDA581;
+   color: white;
+}
+
+
+.listone {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+}
+
+.listtwo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+}
+
+.listthree {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+}
+
+
+.listfour {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+}
+
+
+.listfive {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+} 
+.listsix {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+} 
+
+.listseven {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+} 
+
+.listeight {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+    
+} 
+
+/* ------------頁尾上面開始 ----------*/
+
+.footerup {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footerup p {}
+
+.footerup a {}
+
+.footerup>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.footerupaboutus {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin-right: 20px;
+
+}
+
+.footerupaboutus a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerupaboutus a:hover{
+    text-decoration:underline
+}
+
+.footerupinformation {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.footerupinformation a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerupinformation a:hover{
+    text-decoration:underline
+}
+
+.footerupcontact {
+    line-height: 1.6;
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
+.footerupcontact a {
+    /* border: 1px solid red; */
+
+
+}
+
+.footerupcontact img {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+
+
+/* -------頁尾下面開始--------- */
+
+.footerdown {
+    padding-bottom: 20px;
+}
+
+.footerdown p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+}

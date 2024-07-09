@@ -1,0 +1,347 @@
+@import url(../CSS/reset.css);
+
+
+.wrapper {
+    font-size: 16px;
+    background-color: #F3DAC4;
+    font-family: "segoe script", "Noto Sans TC";
+    width: 100%;
+}
+
+/* ------------頁首開始 ----------*/
+
+.header {}
+
+.headerup {
+    padding-top: 10px;
+}
+
+.headerup p {
+
+    text-align: center;
+
+}
+
+.headerdown {
+    display: flex;
+    width: 1240px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding-bottom: 5px;
+
+
+}
+
+
+
+
+.mainlogo {}
+
+.mainlogo img {
+    padding-left: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+.headerdown ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    /* margin-left: 30px; */
+
+
+
+}
+
+.headerdown li {
+
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #CDA581;
+    align-self: auto;
+
+}
+
+.headerdown li a {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberlogo {
+    margin-left: auto;
+    /* padding-right: 20px; */
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.memberlogo img {}
+
+.shoppinglogo {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.shoppinglogo img {
+    padding-left: 20px;
+
+}
+
+.headerdown li a:hover{
+    background-color: #FFF1E4;
+    color: black;
+}
+
+
+
+/* ----------主頁開始 ------- */
+.main-sel {
+    background-color: #FFF1E4;
+}
+.main-sel-white{
+    background-color: white;
+    width: 550px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.logintop {
+    display: block;
+    border-bottom: 1px solid black;
+    
+    line-height: 4.0;
+    
+}
+
+
+
+.lonintext {
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+    font-size: 18px;
+    padding-right: 10px;
+    
+}
+ .jointext{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+ }
+
+
+
+
+.fastlogin p{
+    line-height: 4.0;
+    
+    font-size: 18px;
+}
+
+
+
+.fastlogin a{
+    /* border: 1px solid black; */
+    display: block;
+    
+    background-color: #F3DAC4;
+    color: white;
+    text-decoration: none;
+    
+    margin-bottom: 40px;
+}
+
+.forlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 ;
+    padding-left: 10px;
+}
+
+.logincenter{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logincenter span{
+    line-height: 4.0;
+    padding-right:50px;
+    font-size: 18px;
+}
+
+.logincenter a{
+    display: block;
+    height: 30px;
+    width: 80px;
+    border: 1px solid #D8D8D8;
+    color: #D8D8D8;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.0;
+}
+
+
+.password{
+    line-height: 4.0;
+    /* padding:0 50px; */
+    font-size: 18px;
+    display:block;
+}
+
+.passwordone{
+    display: block;
+    width: 446px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    outline:none;
+}
+
+.passwordtwo{
+    display: block;
+    width: 446px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    outline:none;
+}
+
+.passwordthree{
+    width: 446px;
+    height: 40px;
+    border: none;
+    border: 1px solid #D8D8D8;
+    outline:none;
+    background-color: white;
+}
+
+
+
+
+.passwordthree:hover{
+    background-color: #D8D8D8;
+}
+
+.logincenterhover:hover{
+    background-color: #eeeeee;
+}
+
+
+.forlink:hover{
+    background-color: #CDA581;
+}
+
+
+/* ------------頁尾上面開始 ----------*/
+
+.footerup {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footerup p {}
+
+.footerup a {}
+
+.footerup>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 120px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.footerupaboutus {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin-right: 20px;
+
+}
+
+.footerupaboutus a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerupaboutus a:hover{
+    text-decoration:underline
+}
+
+.footerupinformation {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+
+
+}
+
+.footerupinformation a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerupinformation a:hover{
+    text-decoration:underline
+}
+
+.footerupcontact {
+    line-height: 1.6;
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
+.footerupcontact a {
+    /* border: 1px solid red; */
+
+
+}
+
+.footerupcontact img {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+
+
+/* -------頁尾下面開始--------- */
+
+.footerdown {
+    padding-bottom: 20px;
+}
+
+.footerdown p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
