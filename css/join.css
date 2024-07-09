@@ -121,7 +121,7 @@
 
 .logintop {
     border-bottom: 1px solid black;
-    display: flex;
+    /* display: flex; */
     line-height: 4.0;
 
 }
