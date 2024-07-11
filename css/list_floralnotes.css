@@ -108,82 +108,172 @@
 /* ----------主頁開始 ------- */
 .main-sel {
     background-color: #FFF1E4;
-    padding: 80px 0;
+    padding: 20px 0;
+
 }
 
-.main-sel-white {
-    background-color: white;
-    width: 700px;
-    
+.white {
+    /* border: 1px solid red; */
+    width: 1000px;
     margin: 0 auto;
-    padding: 50px;
-    box-sizing: border-box;
-    border-radius: 40px;
 }
 
-.main-sel-white>p {
-    font-size: 30px;
+
+.main-sel-white p {
     text-align: center;
+    font-size: 38px;
+    width: 400px;
+    margin: 0 auto;
     margin-bottom: 20px;
-}
-
-.main-sel-white ul {
-    line-height: 1.6;
-}
-
-.arrow {
-    border: 2px solid #F3DAC4;
-    background-color: white;
-    border-radius: 12px;
-    cursor: pointer;
-    padding: 10px;
-    width: 600px;
-
-    margin-bottom: 5px;
-
-    text-align: left;
-    font-size: 14px;
-
-    transition: 0.4s;
-    /* margin-bottom: 20px; */
-}
-
-.active,
-.arrow:hover {
     background-color: #F3DAC4;
+    line-height: 1.6;
     color: white;
 }
 
-.arrow:after {
-    content: '\002B';
-    color: black;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+.main-top-bigpicture {
+    width: 1000px;
+    height: 480px;
 
-    /* float:right; */
 }
 
-.active:after {
-    content: "\2212";
+.list {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 1000px;
+
+
 }
 
+.listleft {
 
-.answer {
-    overflow: hidden;
-    font-size: 14px;
+    width: 120px;
+    height: 450px;
+
+    padding: 20px;
     border-radius: 12px;
-    margin-bottom: 5px;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
+    background-color: white;
+    /* border: 1px solid red; */
+    margin-right: 10px;
 }
 
-.answer p{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    padding: 0 10px;
+.listleft p {
+    display: block;
+    border-bottom: 1px solid #CDA581;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 4.0;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
+
+.listleft a {
+    display: block;
+    border-bottom: 1px solid #CDA581;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 4.0;
+    margin-bottom: 5px;
+}
+
+.listleft a:hover {
+
+    background-color: #FFF1E4;
+    border-radius: 4px;
+
+}
+
+.listright {
+    width: 800px;
+
+}
+
+
+.listfull {
+    /* border: 1px solid red; */
+    width: 260px;
+    display: block;
+    float: left;
+}
+
+.listfull img {
+    width: 240px;
+    height: 260px;
+    margin: 0 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.name {
+    font-size: 18px;
+
+
+}
+
+.capacity {
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+
+.taste {
+    font-size: 12px;
+    color: #7F7F7F;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.listfull a {
+    display: flex;
+    width: 240px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #CDA581;
+    border-radius: 12px;
+    color: #7F7F7F;
+    background-color: #FFF1E4;
+
+}
+
+.listfull a:hover {
+    background-color: #CDA581;
+    color: white;
+}
+
+
+
+
+.listthree {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+
+
+
+
+
+.listfive {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+
+
 
 /* ------------頁尾上面開始 ----------*/
 
@@ -236,8 +326,6 @@
     display: flex;
     flex-direction: column;
     line-height: 1.6;
-
-
 }
 
 .footerupinformation a {

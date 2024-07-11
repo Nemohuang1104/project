@@ -108,12 +108,13 @@
 /* ----------主頁開始 ------- */
 .main-sel {
     background-color: #FFF1E4;
+    padding: 80px 0 ;
 }
 
 .main-sel-white {
     background-color: white;
-    width: 550px;
-    height: 750px;
+    width: 700px;
+   
     margin: 0 auto;
     padding: 50px;
     box-sizing: border-box;

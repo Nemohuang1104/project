@@ -20,8 +20,7 @@
                 <a href="./index.html" class="mainlogo"><img src="./img/frontpage22.png" alt=""></a>
                 <ul>
                     <li><a href="./newproduct.html">Latest News</a></li>
-                    <li><a href="./introduction.html">About
-                            Us</a></li>
+                    <li><a href="./introduction.html">About us</a></li>
                     <li><a href="./listtotal.html">Products
                             story</a></li>
                     <li><a href="./question.html">FAQs</a>
@@ -37,66 +36,34 @@
         <main class="main-sel"> <!--主頁開始 -->
             <div class="main-sel-white">
                 <p>商品Q & A</p>
-                <ul>
-                    <li>
+                <button class="arrow">Q1 : 首次點燃後是否有需要修剪燭心?</button>
+                <div class="answer">
+                    <p>A1 : 不需要的唷 ! 爾後需將燒黑部位做修剪，燭芯保持在0.5公分即可。</p>
+                </div>
 
-                        <div class="arrow">
-                            <p>Q1 : 首次點燃後是否有需要修剪燭心?</p>
-                            <i class="fa-solid fa-angle-up" aria-hidden="true">
-                                <!-- ::before -->
-                            </i>
-                        </div>
-                        <p class="answer">A1 : 不需要的唷 ! 爾後需將燒黑部位做修剪，燭芯保持在0.5公分即可。</p>
-                    </li>
+                <button class="arrow">Q2 : 請問我可以用哪些方法將蠟燭熄滅？</button>
+                <div class="answer">
+                    <p>A2 : 由蓋子熄滅蠟燭，切勿用口吹熄。</p>
+                </div>
 
+                <button class="arrow">Q3 : 有哪些狀況屬正常情況？</button>
+                <div class="answer">
+                    <p>(1)蠟燭乾掉產生裂痕、凹凸不平、坑洞、冒痘(天然大豆本身的特性，請安心使用)<br>(2)蠟燭點燃後，水晶及植物草會往下沉<br>(3)木片燭芯燃燒會帶來較小聲響的劈啪聲，也會造成上層蠟池變色
+                    </p>
+                </div>
 
-                    <li>
-                        <div class="arrow">
-                            <p>Q2 : 請問我可以用哪些方法將蠟燭熄滅？</p>
-                            <i class="fa-solid fa-angle-up" aria-hidden="true">
-                                <!-- ::before -->
-                            </i>
-                        </div>
-                        <p class="answer">A2 : 由蓋子熄滅蠟燭，切勿用口吹熄。</p>
-                    </li>
+                <button class="arrow">Q4 : 一次燃燒建議多久時間？</button>
+                <div class="answer">
+                    <p>A4 : 因為蠟燭有燃燒記憶點，所以盡可能將蠟燭燃燒至蠟池平面都以溶解即可，但切勿燃燒超過四小時。必免過燙情形發生。</p>
+                </div>
 
 
-                    <li>
-                        <div class="arrow">
-                            <p>Q3 : 有哪些狀況屬正常情況？</p>
-                            <i class="fa-solid fa-angle-up" aria-hidden="true">
-                                <!-- ::before -->
-                            </i>
-                        </div>
-                        <p class="answer">A3 :
-                            <br>(1)蠟燭乾掉產生裂痕、凹凸不平、坑洞、冒痘(天然大豆本身的特性，請安心使用)<br>(2)蠟燭點燃後，水晶及植物草會往下沉<br>(3)木片燭芯燃燒會帶來較小聲響的劈啪聲，也會造成上層蠟池變色
-                        </p>
-                    </li>
+                <button class="arrow">Q5 : 邊緣硬蠟未融化，我可以怎麽做？</button>
+                <div class="answer">
+                    <p>A5 : 可在蠟燭燃燒畤拿耙蠟燭杯輕繞圓，用中間融化並帶有溫度的蠟液，來接觸旁邊的硬蠟，幫助邊緣的硬蠟融化a(小心勿讓蠟液溢出與杯身的溫度，避免燙到)</p>
+                </div>
 
 
-                    <li>
-                        <div class="arrow">
-                            <p>Q4 : 一次燃燒建議多久時間？</p>
-                            <i class="fa-solid fa-angle-up" aria-hidden="true">
-                                <!-- ::before -->
-                            </i>
-                        </div>
-                        <p class="answer">A4 : 因為蠟燭有燃燒記憶點，所以盡可能將蠟燭燃燒至蠟池平面都以溶解即可，但切勿燃燒超過四小時。必免過燙情形發生。</p>
-                    </li>
-
-
-                    <li>
-                        <div class="arrow">
-                            <p>Q5 : 邊緣硬蠟未融化，我可以怎麽做？</p>
-                            <i class="fa-solid fa-angle-up" aria-hidden="true">
-                                <!-- ::before -->
-                            </i>
-                        </div>
-                        <p class="answer">A5 : 可在蠟燭燃燒畤拿耙蠟燭杯輕繞圓，用中間融化並帶有溫度的蠟液，來接觸旁邊的硬蠟，幫助邊緣的硬蠟融化a(小心勿讓蠟液溢出與杯身的溫度，避免燙到)
-                        </p>
-                    </li>
-
-                </ul>
             </div>
 
 
@@ -149,9 +116,26 @@
 
 
         </footer> <!--頁尾結束-->
-
-
     </div> <!--最外層包裝結束 -->
+
+    <script>
+        let arrow = document.getElementsByClassName("arrow");
+        let i;
+
+        for (i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                let answer = this.nextElementSibling;
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
 
 </body>
 
