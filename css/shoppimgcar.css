@@ -282,12 +282,18 @@
 .main-center-top_three{
     display: flex;
     justify-content:space-between;
+    align-items: center;
     text-align: left;
     width: 900px;
     border: 1px solid #C1C1C1;
     margin: 0 auto;
     border-top: none;
     padding: 15px ;
+    
+}
+
+.main-center-top_three div{
+    width: 180px;
 }
 
 .main-center-top_three_picture{
@@ -305,11 +311,28 @@
     display: flex;
     width: 80px;
     align-items: center;
+    
 }
 
 .main-center-product input{
     width: 30px;
 }
+
+.main-center-product button{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin-right: 3px;
+}
+
+.main-center-product input{
+    border: 1px solid black;
+    background-color: white;
+    margin-right: 3px;
+    
+}
+
+
 
 .main-center-down{
     border: 1px solid #C1C1C1;
@@ -322,6 +345,7 @@
     padding: 15px 15px;
     
     font-size: 18px;
+
     
 }
 
@@ -358,6 +382,7 @@
     background-color: #CDA581;
     
 }
+
 
 
 .main-center-down>span {

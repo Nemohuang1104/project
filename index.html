@@ -27,7 +27,7 @@
                     </li>
                 </ul>
                 <a href="./login.html" class="memberlogo"><img src="./img/frontpage01.png" alt=""></a>
-                <a href="#" class="shoppinglogo"><img src="./img/frontpage18.png" alt=""></a>
+                <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage18.png" alt=""></a>
 
             </div>
 
@@ -50,7 +50,7 @@
                         <img src="./img/frontpage03.jpg" alt="">
                     </span>
                     <h3>About us</h3>
-                    <p >
+                    <p>
                         宅抒室給你像家一樣舒服自在的氛圍，希望透過香味<br>讓每一位顧客在收到香氛蠟燭後也能感受到愉悅放鬆的<br>而我們選用的材料為天然的大豆蠟以及環保材質<br>歡迎大家一同身歷其境吧
                     </p>
                 </div> <!--關於我們結束-->
@@ -69,14 +69,17 @@
                 <div class="top5"><!--TOP5開始-->
                     <p>TOP5</p>
                     <div class="top5picture">
-                        <img src="./img/frontpage04.jpg" alt="">
-                        <img src="./img/frontpage06.jpg" alt="">
-                        <img src="./img/frontpage07.jpg" alt="">
-                        <img src="./img/frontpage08.jpg" alt="">
-                        <img src="./img/frontpage13.jpg" alt="">
+
+                        <a href="./product5.html"><img class="top5picture01" src="./img/frontpage04.jpg" alt=""></a>
+                        <a href="./product4.html"><img class="top5picture01" src="./img/frontpage06.jpg" alt=""></a>
+                        <a href="./product1.html"></a> <img class="top5picture01" src="./img/frontpage07.jpg" alt=""></a>
+                        <a href="./product3.html"></a><img class="top5picture01" src="./img/frontpage08.jpg" alt=""></a>
+                        <a href="./product2.html"></a><img class="top5picture01" src="./img/frontpage13.jpg" alt=""></a>
                     </div>
-                    <button class="buttonleft"> <img src="./img/frontpage12.png" alt=""></button>
-                    <button class="buttonright"><img src="./img/frontpage11.png" alt=""></button>
+                    <button class="buttonleft" onclick="plusSlides(-1)"> <img src="./img/frontpage12.png"
+                            alt=""></button>
+                    <button class="buttonright" onclick="plusSlides(1)"><img src="./img/frontpage11.png"
+                            alt=""></button>
                 </div><!--TOP5結束-->
 
                 <div class="maindown"> <!--溫暖語錄開始-->
@@ -133,12 +136,34 @@
 
             </div> <!--頁尾下面結束-->
 
-
-
         </footer> <!--頁尾結束-->
 
     </div> <!--最外層包裝結束 -->
-    <script src="../project/js/first.js"> </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("top5picture01");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
 </body>
 
 </html>

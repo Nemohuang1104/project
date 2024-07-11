@@ -196,7 +196,7 @@
     margin-top: 40px;
     margin-left: 100px;
     font-size: 18px;
-   
+
 
 
 }
@@ -207,13 +207,13 @@
     justify-content: right;
     margin-top: 80px;
     margin-right: 100px;
-   
+
 
 
 }
 
 .twopicture img {
-    
+
     outline: 5px solid #CDA581;
     height: 200px;
     width: 250px;
@@ -283,12 +283,10 @@
 
 /* -------TOP5開始------ */
 .top5 {
-    /* clear:both; */
-    /* border: 1px solid black; */
+
     margin-bottom: 120px;
     position: relative;
-
-
+    
 }
 
 .top5 p {
@@ -300,17 +298,16 @@
 .top5picture {
     display: flex;
     justify-content: center;
-    transition: transform 0.5s ease-in-out;
+    
+    
 }
 
 
 .top5picture img {
-    /* border: 10px solid black; */
-    /* width: 330px; */
     height: 400px;
-    width: 100%;
-    /* 確保圖片填滿容器 */
-    object-fit: cover;
+    width: 300px;
+    border-radius: 12px;
+   
 }
 
 .top5picture img:not(:last-child) {
@@ -325,8 +322,9 @@
     border: none;
     cursor: pointer;
     font-size: 20px;
-    padding: 20px;
+    padding: 256px;
     left: 1rem;
+    
 }
 
 .buttonright {
@@ -337,8 +335,9 @@
     border: none;
     cursor: pointer;
     font-size: 20px;
-    padding: 20px;
+    padding: 265px;
     right: 1rem;
+    
 }
 
 
