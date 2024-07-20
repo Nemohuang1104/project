@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/question.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>question</title>
 </head>
 
@@ -17,7 +18,7 @@
             </div>
 
             <div class="headerdown">
-                <a href="./index.html" class="mainlogo"><img src="./img/frontpage22.png" alt=""></a>
+                <a href="./index.html" class="mainlogo"><img src="./img/logo02.png" alt=""></a>
                 <ul>
                     <li><a href="./newproduct.html">Latest News</a></li>
                     <li><a href="./introduction.html">About us</a></li>
@@ -26,8 +27,8 @@
                     <li><a href="./question.html">FAQs</a>
                     </li>
                 </ul>
-                <a href="./login.html" class="memberlogo"><img src="./img/frontpage01.png" alt=""></a>
-                <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage18.png" alt=""></a>
+                <a href="./login.html" class="memberlogo"><img src="./img/frontpage25.png" alt=""></a>
+                <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage29.png" alt=""></a>
 
             </div>
 
@@ -72,38 +73,41 @@
         <footer> <!--頁尾開始-->
 
             <div class="footerup"> <!--頁尾上面開始-->
-                <img src="./img/frontpage23.jpg" alt="">
-                <div class="footerupaboutus">
-                    <P>關於我們</P>
-                    <a href="./introduction.html">品牌故事</a>
-                    <a href="./introduction.html">商店介紹</a>
-                    <a href="#">門市資訊</a>
-                    <a href="#">隱私權及網站使用條款</a>
-                </div>
+                <img src="./img/newlogo.png" alt="">
 
-                <div class="footerupinformation">
-                    <P>客服資訊</P>
-                    <a href="#">購物說明</a>
-                    <a href="#">客服留言</a>
-                    <a href="#">會員權益聲明</a>
-
-                </div>
 
                 <div class="footerupcontact">
                     <P>聯絡我們</P>
                     <p>電話 : (02)2941-5530</p>
                     <p>Email : q113113113q@gmail.com</p>
                     <ul>
-                        <a href=""><img src="./img/frontpage19.png" alt=""></a>
+                        <a href=""><img src="./img/frontpage21.png" alt=""></a>
                         <a href="https://www.instagram.com/house_shu_shi/?igsh=cWF6eGJhcTRjZXlt"><img
                                 src="./img/frontpage20.png" alt=""></a>
-                        <a href=""><img src="./img/frontpage21.png" alt=""></a>
+                        <a href=""><img src="./img/frontpage19.png" alt=""></a>
                     </ul>
-
 
                 </div>
 
+                <div class="footerupright">
 
+                    <div class="footerupaboutus">
+                        <P>關於我們</P>
+                        <a href="./introduction.html">品牌故事</a>
+                        <a href="./introduction.html">商店介紹</a>
+                        <a href="#">門市資訊</a>
+                        <a href="#">隱私權及網站使用條款</a>
+                    </div>
+
+                    <div class="footerupinformation">
+                        <P>客服資訊</P>
+                        <a href="#">購物說明</a>
+                        <a href="#">客服留言</a>
+                        <a href="#">會員權益聲明</a>
+
+                    </div>
+
+                </div>
 
             </div> <!--頁尾上面結束-->
 
@@ -114,25 +118,33 @@
             </div> <!--頁尾下面結束-->
 
 
-
         </footer> <!--頁尾結束-->
     </div> <!--最外層包裝結束 -->
 
     <script>
-        let arrow = document.getElementsByClassName("arrow");
-        let i;
+        let arrows = document.getElementsByClassName("arrow");
 
-        for (i = 0; i < arrow.length; i++) {
-            arrow[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                let answer = this.nextElementSibling;
-                if (answer.style.maxHeight) {
-                    answer.style.maxHeight = null;
-                } else {
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                }
-            });
+for (let i = 0; i < arrows.length; i++) {
+    arrows[i].addEventListener("click", function() {
+        // Loop through all arrows and close them, except the current one
+        for (let j = 0; j < arrows.length; j++) {
+            if (arrows[j] !== this) {
+                arrows[j].classList.remove("active");
+                let otherAnswer = arrows[j].nextElementSibling;
+                otherAnswer.style.maxHeight = null;
+            }
         }
+
+        // Toggle the current arrow
+        this.classList.toggle("active");
+        let answer = this.nextElementSibling;
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+}
     </script>
 
 
@@ -140,3 +152,11 @@
 </body>
 
 </html>
+
+
+// 如果需要開啟一個就關閉前一個，就加入以下：
+const active = document.querySelectorAll('.active');
+Array.prototype.forEach.call(active, act => {
+  act.classList.remove('active');
+  act.parentNode.querySelector('.contents-box').setAttribute('style', 'height: 0');
+})

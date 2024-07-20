@@ -1,0 +1,249 @@
+@import url(./reset.css);
+
+
+.wrapper {
+    font-size: 16px;
+    background-color: #FFF2E1;
+    font-family: "Caveat", "Noto Sans TC";
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFF1E4;
+     /* 確定顶部导航欄位位於其他内容上層 */
+    z-index: 100;
+}
+
+
+
+.headerup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #6a3224;
+    color: white;
+}
+
+.headerup p {
+
+    text-align: center;
+
+}
+
+.headerdown {
+    display: flex;
+    width: 1240px;
+
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding: 10PX 40px;
+    box-sizing: border-box;
+
+
+}
+
+
+.mainlogo img {
+    padding-left: 20px;
+    width: 150px;
+    height: 60px;
+}
+
+.headerdown ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    /* margin-left: 30px; */
+
+
+
+}
+
+.headerdown li {
+    margin: 0 10px;
+    font-size: 25px;
+
+    align-self: auto;
+}
+
+
+.headerdown li a {
+
+    display: flex;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: #6a3224;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.memberlogo {
+    margin-left: auto;
+    /* padding-right: 20px; */
+    display: flex;
+    align-items: center;
+    color: #6a3224;
+}
+
+.memberlogo img {}
+
+.shoppinglogo {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.shoppinglogo img {
+    padding-left: 20px;
+}
+
+
+.headerdown li a:hover {
+    /* background-color: #FFF1E4; */
+    color: #6a3224;
+    font-weight: bold;
+    border-bottom: 3px solid #db8e5c;
+}
+
+
+
+
+/* ------------頁尾上面開始 ----------*/
+footer {
+    background-color: #6a3224;
+    color: #F3DAC4;
+    padding: 20px;
+}
+
+.footerup {
+    width: 1000px;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+    background-color: #6a3224;
+    color: #FFF1E4;
+    display: flex;
+}
+
+.footerup p {
+    font-weight: bold;
+    color: #c45c32;
+}
+
+
+
+.footerup>img {
+    width: 100px;
+    height: 90px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 15px; */
+
+}
+
+.footerupcontact{
+    margin-right: 100px;
+}
+
+.footerupcontact p {
+    line-height: 1.6;
+    color: #FFF1E4;
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
+.footerupcontact a {
+    /* border: 1px solid red; */
+
+
+
+}
+
+.footerupcontact img {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+.footerupinformation{
+    display: flex;
+    
+}
+
+
+.footerupaboutus {
+    display: flex;
+    line-height: 1.6;
+
+}
+
+.footerupaboutus p {
+    margin-right: 15px;
+}
+
+.footerupaboutus a {
+    text-decoration: none;
+    color: #FFF1E4;
+    margin-right: 10px;
+
+}
+
+.footerupaboutus a:hover {
+    text-decoration: underline
+}
+
+.footerupinformation {
+    /* display: flex; */
+    line-height: 1.6;
+}
+
+
+.footerupinformation p {
+    font-weight: bold;
+    color: #c45c32;
+    margin-right: 15px;
+}
+
+
+.footerupinformation a {
+    text-decoration: none;
+    color: #FFF1E4;
+    margin-right: 10px;
+}
+
+.footerupinformation a:hover {
+    text-decoration: underline
+}
+
+
+
+
+/* -------頁尾下面開始--------- */
+
+.footerdown {
+    padding-bottom: 20px;
+}
+
+.footerdown p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
+

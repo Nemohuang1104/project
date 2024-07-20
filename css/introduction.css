@@ -1,109 +1,10 @@
 @import url(./reset.css);
-
-.wrapper {
-    font-size: 16px;
-    background-color: #F3DAC4;
-    font-family: "segoe script", "Noto Sans TC";
-    width: 100%;
-}
-
-.header {}
-
-.headerup {
-    padding-top: 10px;
-}
-
-.headerup p {
-
-    text-align: center;
-
-}
-
-.headerdown {
-    display: flex;
-    width: 1240px;
-    /* border: 1px solid black; */
-    margin: 0 auto;
-    padding-bottom: 5px;
-
-
-}
-
-
-
-
-.mainlogo {}
-
-.mainlogo img {
-    padding-left: 20px;
-    width: 150px;
-    height: 60px;
-}
-
-.headerdown ul {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-
-    /* margin-left: 30px; */
-
-
-
-}
-
-.headerdown li {
-
-    margin: 0 10px;
-    font-size: 16px;
-    background-color: #CDA581;
-    align-self: auto;
-
-}
-
-.headerdown li a {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
-
-.memberlogo {
-    margin-left: auto;
-    /* padding-right: 20px; */
-    display: flex;
-    align-items: center;
-
-
-
-}
-
-.memberlogo img {}
-
-.shoppinglogo {
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-
-
-
-}
-
-.shoppinglogo img {
-    padding-left: 20px;
-}
-
-.headerdown li a:hover {
-    background-color: #FFF1E4;
-    color: black;
-}
+@import url(./updown.css);
 
 /* ----------------主頁開始---------------- */
 .main-sel {
-    background-color: #FFF1E4;
+    background-color: #FFF2E1;
+    padding-top: 120px;
 }
 
 .main-white {
@@ -111,8 +12,8 @@
     width: 1000px;
     /* background-color: white; */
     margin: 0 auto;
-    padding: 100px;
-    padding-top: 40px;
+    /* padding: 100px;
+    padding-top: 40px; */
     box-sizing: border-box;
 }
 
@@ -142,11 +43,12 @@
 
 .conceptname h3 {
     font-size: 38px;
-    border-bottom: 3px dashed black;
+    border-bottom: 3px dashed #6a3224;
     line-height: 1.6;
     text-align: center;
     width: 180px;
     margin-bottom: 40px;
+    color: #6a3224;
 
 
 
@@ -155,6 +57,7 @@
 .conceptname p {
     font-size: 18px;
     line-height: 1.6;
+    color: #db8e5c;
 
 
 
@@ -183,14 +86,19 @@
     margin-bottom: 120px;
 }
 
+.environmental-img-h4{
+    position: relative;
+}
+
 .environmental h3 {
-    border-bottom: 3px dashed black;
+    border-bottom: 3px dashed #6a3224;
     margin: 0 auto;
     text-align: center;
     font-size: 38px;
     width: 250px;
     line-height: 1.6;
     margin-bottom: 40px;
+    color: #6a3224;
 }
 
 .environmental ul {
@@ -217,7 +125,28 @@
 
 .environmental h4 {
     margin-bottom: 20px;
+    color: #6a3224;
+    position: absolute;
+    top: 85px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: scale(0.8);
 
+}
+
+.environmental p{
+    color: #db8e5c;
+}
+
+.environmental-img-h4:hover h4 {
+    opacity: 1;
+    transform: scale(1);
 }
 
 
@@ -227,17 +156,18 @@
 .material {
     /* border: 1px solid black; */
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 
 .material h3 {
     font-size: 38px;
-    border-bottom: 3px dashed black;
+    border-bottom: 3px dashed #6a3224;
+    color: #6a3224;
     width: 180px;
     margin: 0 auto;
 
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 
 }
 
@@ -262,17 +192,19 @@
 .product1 {
     /* border: 1px solid black; */
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
 .product1 h3 {
 
     font-size: 38px;
     line-height: 1.6;
-    border-bottom: 3px dashed black;
+    border-bottom: 3px dashed #6a3224;
     width: 180px;
     margin: 0 auto;
     margin-bottom: 40px;
+    color: #6a3224;
 
 }
 
@@ -280,6 +212,7 @@
     text-align: center;
     line-height: 1.6;
     margin-bottom: 40px;
+    color: #db8e5c;
 }
 
 .product1 img {
@@ -290,101 +223,3 @@
 }
 
 
-
-/* -----------頁尾上面開始 ----------*/
-
-.footerup {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    /* border: 1px solid black; */
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.footerup p {}
-
-.footerup a {}
-
-.footerup>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 120px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
-
-}
-
-
-.footerupaboutus {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-    margin-right: 20px;
-
-}
-
-.footerupaboutus a {
-    text-decoration: none;
-    color: black;
-}
-
-.footerupaboutus a:hover {
-    text-decoration: underline
-}
-
-.footerupinformation {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-
-
-}
-
-.footerupinformation a {
-    text-decoration: none;
-    color: black;
-}
-
-.footerupinformation a:hover {
-    text-decoration: underline
-}
-
-
-.footerupcontact {
-    line-height: 1.6;
-    /* display: flex; */
-    /* justify-content: end; */
-}
-
-.footerupcontact a {
-    /* border: 1px solid red; */
-
-
-}
-
-.footerupcontact img {
-    width: 20px;
-    height: 20px;
-
-
-}
-
-
-
-/* -------頁尾下面開始--------- */
-
-.footerdown {
-    padding-bottom: 20px;
-}
-
-.footerdown p {
-    font-size: 12px;
-    text-align: center;
-    line-height: 1.6;
-}

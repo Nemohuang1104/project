@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/frontpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>frontpage</title>
 </head>
 
@@ -16,7 +18,7 @@
             </div>
 
             <div class="headerdown">
-                <a href="./index.html" class="mainlogo"><img src="./img/frontpage22.png" alt=""></a>
+                <a href="./index.html" class="mainlogo"><img src="./img/logo02.png" alt=""></a>
                 <ul>
                     <li><a href="./newproduct.html">Latest
                             News</a></li>
@@ -26,8 +28,8 @@
                     <li><a href="./question.html">FAQs</a>
                     </li>
                 </ul>
-                <a href="./login.html" class="memberlogo"><img src="./img/frontpage01.png" alt=""></a>
-                <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage18.png" alt=""></a>
+                <a href="./login.html" class="memberlogo"><img src="./img/frontpage25.png" alt=""></a>
+                <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage29.png" alt=""></a>
 
             </div>
 
@@ -36,18 +38,30 @@
         <main class="main-sel"> <!--主頁開始-->
             <div class="main-white">
                 <div class="bigpicture"> <!--三張大圖輪流播放-->
-                    <ul>
-                        <li class="item1"></li>
-                        <li class="item2"></li>
-                        <li class="item3"></li>
+                    <ul class="content">
+                        <li><img src="./img/slider002.jpg" class="image"></li>
+                        <li><img src="./img/slider001.jpg" class="image"></li>
+                        <li><img src="./img/slider003.png" class="image"></li>
+                        <li><img src="./img/slider004.jpg" class="image"></li>
+                        <li><img src="./img/slider005.jpg" class="image"></li>
+                        <li><img src="./img/slider006.jpg" class="image"></li>
+                    </ul>
+
+                    <ul class="contentButton">
+                        <!-- <li class="clicked"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li> -->
                     </ul>
                 </div> <!--三張大圖輪流播放結束-->
 
 
                 <div class="mainaboutus"><!--關於我們開始-->
                     <span class=" twopicture">
-                        <img src="./img/frontpage02.jpg" alt="">
-                        <img src="./img/frontpage03.jpg" alt="">
+                        <img src="./img/frontpage02.jpg" alt="" class="twopictureone">
+                        <img src="./img/frontpage03.jpg" alt="" class="twopicturetwo">
                     </span>
                     <h3>About us</h3>
                     <p>
@@ -56,7 +70,12 @@
                 </div> <!--關於我們結束-->
 
                 <div class="newnew"> <!--新品來了開始-->
-                    <img src="./img/frontpage04.jpg" alt="">
+                    <div class="newleft">
+                        <img src="./img/frontpage30.jpg" alt="" class="image-container">
+                        <p class="newnewtimgtext">無限耍廢<br>VEGOUT</p>
+                        <div class="newline"></div>
+                    </div>
+                    
                     <div class="newright">
                         <h3> ღ New product ღ</h3>
                         <p>在繁忙壓力過大的狀態<br>是不是也想耍廢呢?<br>最新一款「無限耍廢」<br>黑茶木質調/迷迭香/東菱玉<br>快點來點選商品連結。
@@ -70,12 +89,12 @@
                     <p>TOP5</p>
                     <div class="top5picture">
 
-                        <a href="./product5.html"><img class="top5picture01" src="./img/frontpage04.jpg" alt=""></a>
-                        <a href="./product4.html"><img class="top5picture01" src="./img/frontpage06.jpg" alt=""></a>
-                        <a href="./product1.html"></a> <img class="top5picture01" src="./img/frontpage07.jpg"
+                        <a href="./product5.html"><img class="top5picture01" src="./img/frontpage30.jpg" alt=""></a>
+                        <a href="./product4.html"><img class="top5picture01" src="./img/frontpage31.jpg" alt=""></a>
+                        <a href="./product1.html"></a> <img class="top5picture01" src="./img/frontpage32.jpg"
                             alt=""></a>
-                        <a href="./product3.html"></a><img class="top5picture01" src="./img/frontpage08.jpg" alt=""></a>
-                        <a href="./product2.html"></a><img class="top5picture01" src="./img/frontpage13.jpg" alt=""></a>
+                        <a href="./product3.html"></a><img class="top5picture01" src="./img/frontpage33.jpg" alt=""></a>
+                        <a href="./product2.html"></a><img class="top5picture01" src="./img/frontpage34.jpg" alt=""></a>
                     </div>
                     <button class="buttonleft" onclick="plusSlides(-1)"> <img src="./img/frontpage12.png"
                             alt=""></button>
@@ -85,9 +104,9 @@
 
                 <div class="maindown"> <!--溫暖語錄開始-->
                     <img src="./img/frontpage09.jpg" alt="">
-                    <p>Give yourself a little break!<br>“忙碌之餘，請記得好好休息。”</p>
-                    <a href="./listtotal.html
-                    ">more</a>
+                    <p class="maindown-english">Give yourself a little break!</p>
+                    <p class="maindown-chinese">“ 忙碌之餘，請記得好好休息。”</p>
+                    <a href="./listtotal.html">more</a>
                 </div><!--溫暖語錄結束-->
             </div>
 
@@ -96,22 +115,8 @@
         <footer> <!--頁尾開始-->
 
             <div class="footerup"> <!--頁尾上面開始-->
-                <img src="./img/frontpage23.jpg" alt="">
-                <div class="footerupaboutus">
-                    <P>關於我們</P>
-                    <a href="./introduction.html">品牌故事</a>
-                    <a href="./introduction.html">商店介紹</a>
-                    <a href="#">門市資訊</a>
-                    <a href="#">隱私權及網站使用條款</a>
-                </div>
+                <img src="./img/newlogo.png" alt="">
 
-                <div class="footerupinformation">
-                    <P>客服資訊</P>
-                    <a href="#">購物說明</a>
-                    <a href="#">客服留言</a>
-                    <a href="#">會員權益聲明</a>
-
-                </div>
 
                 <div class="footerupcontact">
                     <P>聯絡我們</P>
@@ -124,10 +129,27 @@
                         <a href=""><img src="./img/frontpage19.png" alt=""></a>
                     </ul>
 
-
                 </div>
 
+                <div class="footerupright">
 
+                    <div class="footerupaboutus">
+                        <P>關於我們</P>
+                        <a href="./introduction.html">品牌故事</a>
+                        <a href="./introduction.html">商店介紹</a>
+                        <a href="#">門市資訊</a>
+                        <a href="#">隱私權及網站使用條款</a>
+                    </div>
+
+                    <div class="footerupinformation">
+                        <P>客服資訊</P>
+                        <a href="#">購物說明</a>
+                        <a href="#">客服留言</a>
+                        <a href="#">會員權益聲明</a>
+
+                    </div>
+
+                </div>
 
             </div> <!--頁尾上面結束-->
 
@@ -140,30 +162,8 @@
         </footer> <!--頁尾結束-->
 
     </div> <!--最外層包裝結束 -->
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("top5picture01");
-
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-    </script>
+    <script src="./js/index.js"></script>
+    
 
 </body>
 

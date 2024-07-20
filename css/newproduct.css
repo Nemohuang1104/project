@@ -1,124 +1,16 @@
 @import url(./reset.css);
-
-.wrapper {
-    font-size: 16px;
-    background-color: #F3DAC4;
-    font-family: "segoe script", "Noto Sans TC";
-    width: 100%;
-}
-
-/* ------------頁首開始 ----------*/
-
-.header {}
-
-.headerup {
-    padding-top: 10px;
-}
-
-.headerup p {
-
-    text-align: center;
-
-}
-
-.headerdown {
-    display: flex;
-    width: 1240px;
-    /* border: 1px solid black; */
-    margin: 0 auto;
-    padding-bottom: 5px;
-
-
-}
-
-
-
-
-.mainlogo {}
-
-.mainlogo img {
-    padding-left: 20px;
-    width: 150px;
-    height: 60px;
-}
-
-.headerdown ul {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-
-    /* margin-left: 30px; */
-
-
-
-}
-
-
-.headerdown li {
-
-    margin: 0 10px;
-    font-size: 16px;
-    background-color: #CDA581;
-    align-self: auto;
-
-}
-
-.headerdown li a {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
-
-.memberlogo {
-    margin-left: auto;
-    /* padding-right: 20px; */
-    display: flex;
-    align-items: center;
-
-
-
-}
-
-.memberlogo img {}
-
-.shoppinglogo {
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-
-
-
-}
-
-.shoppinglogo img {
-    padding-left: 20px;
-
-}
-
-.headerdown li a:hover{
-    background-color: #FFF1E4;
-    color: black;
-}
+@import url(./updown.css);
 
 
 /* ----------主頁開始 ------- */
 .main-sel {
-    background-color: #FFF1E4;
+    background-color: #FFF2E1;
     position: relative;
     height: 600px;
     display: flex;
+    padding-top: 120px;
 }
 
-.main-sel-sel a:hover{
-    border:1px solid #CDA581;
-    background-color: #FFF1E4;
-    color: black;
-}
 
 
 .picturedown{
@@ -129,10 +21,13 @@
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 80px;
+    margin-top: 155px;
     margin-left: 260px;
     
 }
+
+
+
 
 .pictureup{
     width: 300px;
@@ -142,8 +37,27 @@
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 110px;
+    margin-top: 180px;
     margin-left: 320px;
+    animation: moveImage 6s linear infinite;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateY(-5%);
+    }
+    25% {
+        transform: translateY(5%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    75% {
+        transform: translateY(5%);
+    }
+    100% {
+        transform: translateY(-5%);
+    }
 }
 
 .main-sel-sel{
@@ -152,26 +66,26 @@
     position: relative;
     left: 0px;
     top: 0;
-    margin-top: 140px;
+    margin-top: 100px;
     margin-left: 650px;
 }
 .main-sel-sel h3{
     font-size: 40px;
-    margin-bottom: 40px;
-    color: #9A6852;
+    margin-bottom: 20px;
+    color: #6a3224;
     text-align: center;
 }
 .main-sel-sel p{
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 40px;
-    color: #6F5C4A;
+    margin-bottom: 20px;
+    color: #6a3224;
     text-align: center;
 }
 
 .main-sel-sel .situation {
     font-size: 16px;
-    color: #9D9D9D;
+    color: #db8e5c;
 }
 
 .main-sel-sel a{
@@ -180,7 +94,7 @@
     width: 150px;
     height: 50px;
     border-radius: 120px;
-    background-color: #CDA581;
+    background-color: #6a3224;
     color: white;
     line-height:50px;
     text-decoration: none;
@@ -188,100 +102,8 @@
     margin: 0 auto;
 }
 
-
-
-
-
-/* ------------頁尾開始 ----------*/
-
-.footerup {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    /* border: 1px solid black; */
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.footerup p {}
-
-.footerup a {}
-
-.footerup>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 120px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
-
-}
-
-
-.footerupaboutus {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-    margin-right: 20px;
-
-}
-
-.footerupaboutus a {
-    text-decoration: none;
-    color: black;
-}
-
-.footerupaboutus a:hover{
-    text-decoration:underline
-}
-
-.footerupinformation {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-
-
-}
-
-.footerupinformation a {
-    text-decoration: none;
-    color: black;
-}
-
-.footerupinformation a:hover{
-    text-decoration:underline
-}
-
-.footerupcontact {
-    line-height: 1.6;
-    /* display: flex; */
-    /* justify-content: end; */
-}
-
-.footerupcontact a {
-    /* border: 1px solid red; */
-
-
-}
-
-.footerupcontact img {
-    width: 20px;
-    height: 20px;
-}
-
-
-
-
-.footerdown {
-    padding-bottom: 20px;
-}
-
-.footerdown p {
-    font-size: 12px;
-    text-align: center;
-    line-height: 1.6;
+.main-sel-sel a:hover {
+    border: 1px solid #6a3224;
+    background-color: #F3DAC4;
+    color: #6a3224
 }

@@ -1,174 +1,110 @@
 @import url(./reset.css);
-
-.wrapper {
-    font-size: 16px;
-    background-color: #F3DAC4;
-    font-family: "segoe script", "Noto Sans TC";
-    width: 100%;
-}
-
-/* ------------頁首開始 ----------*/
-
-.header {}
-
-.headerup {
-    padding-top: 10px;
-}
-
-.headerup p {
-
-    text-align: center;
-
-}
-
-.headerdown {
-    display: flex;
-    width: 1240px;
-    /* border: 1px solid black; */
-    margin: 0 auto;
-    padding-bottom: 5px;
-
-
-}
-
-
-
-
-.mainlogo {}
-
-.mainlogo img {
-    padding-left: 20px;
-    width: 150px;
-    height: 60px;
-}
-
-.headerdown ul {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-
-    /* margin-left: 30px; */
-
-}
-
-
-.headerdown li {
-
-    margin: 0 10px;
-    font-size: 16px;
-    background-color: #CDA581;
-    align-self: auto;
-
-}
-
-.headerdown li a {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.memberlogo {
-    margin-left: auto;
-    /* padding-right: 20px; */
-    display: flex;
-    align-items: center;
-
-
-
-}
-
-.memberlogo img {}
-
-.shoppinglogo {
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-
-
-
-}
-
-.shoppinglogo img {
-    padding-left: 20px;
-
-}
-
-.headerdown li a:hover {
-    background-color: #FFF1E4;
-    color: black;
-}
+@import url(./updown.css);
 
 /* ----------主頁開始 ------- */
 
 .main-sel {
-    background-color: #FFF1E4;
+    background-color: #FFF2E1;
+    padding-top: 150PX;
+    
 }
 
 .main-white {
-    /* border:  1px solid red; */
+    
     width: 1000px;
-    background-color: white;
+    /* background-color: white; */
     margin: 0 auto;
-    padding: 100px;
-    box-sizing: border-box;
-
-
 }
 
-.main-sel-up {
-    /* border:  1px solid red; */
-    width: 800px;
+.listup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
 
+
+    position: fixed;
+    top: 118px;
+    width: 1000px;
+    
+   
+    background-color: #FFF1E4;
+    /* 確定顶部导航欄位位於其他内容上層 */
+    z-index: 100;
+    
+
+} 
+
+
+
+.listup a {
+    display: inline-block;
+    display: block;
+    /* border-bottom: 1px solid #CDA581; */
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin: 0 15px;
+    border-bottom: 3px dashed #FFF1E4;
+}
+
+.listup a:hover {
+border-bottom: 3px dashed #db8e5c;
+}
+
+
+
+.main-sel-up {
+    font-family: "Noto Sans TC";
+    
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
     margin-bottom: 80px;
     display: flex;
+    justify-content: space-between;
 }
 
 .main-sel-up img {
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     border-radius: 12px;
-    margin: 0 100px;
+   
 }
 
 
-.main-sel-up_text {
-    /* border:  1px solid red; */
-    width: 300px;
-}
 
 .main-sel-up_text h3 {
-    font-size: 40px;
-    text-align: center;
-    color: #9A6852;
-    margin-bottom: 40px;
+    font-size: 38px;
+    color: #6a3224;
+    margin-bottom: 20px;
 
 }
 
 .main-sel-up_text>p {
     font-size: 18px;
-    text-align: center;
-    color: #6F5C4A;
-    margin-bottom: 40px;
+    
+    color: #d2723d;
+    margin-bottom: 20px;
 }
 
 .count {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 40px;
-    padding-left: 70px;
+    color: #6a3224;
+   
 }
 
 .count button {
-    background-color: #CDA581;
+    background-color: #6a3224;
     color: white;
     border: none;
-    border: 1px solid #CDA581;
+    border: 1px solid #6a3224;
 }
 
 
@@ -179,185 +115,72 @@
     line-height: 50px;
     width: 150px;
     height: 50px;
-    background-color: #CDA581;
-    color: white;
+    background-color: #6a3224;
+    color: #FFF1E4;
     margin-bottom: 40px;
     border-radius: 120px;
     text-decoration: none;
     margin: 0 auto;
-    border: 1px solid #CDA581;
-
+    border: 1px solid #6a3224;
 
 }
 
 .main-sel-center {
-    /* overflow: hidden; */
-    /* border:  1px solid red; */
     width: 800px;
     margin: 0 auto;
-    display: flex;
     margin-bottom: 80px;
-
-}
-
-.main-sel-center img {
-    /* border:  1px solid red; */
-    width: 300px;
-    height: 200px;
-    margin: 0 100px;
-    border-radius: 12px;
-}
-
-.main-sel-center_text {
-    /* border:  1px solid red; */
-    width: 350px;
-
-
-}
-
-.main-sel-center_textone {
-    text-align: center;
-    color: #9D9D9D;
-    font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 40px;
-
 }
 
-.main-sel-center_texttwo {
-    /* border:  1px solid red; */
+
+
+.main-sel-center p {
     font-size: 18px;
-    color: #6F5C4A;
-    padding-left: 40px;
-    ;
-    line-height: 1.6;
-
+    color: #6a3224;
+    border-left: 2px solid #db8e5c;
+    padding-left: 10px;
+    
 }
+
+
+
 
 .main-sel-down {
-    /* overflow: hidden; */
-    /* border:  1px solid red; */
     width: 800px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 80px;
+    position: relative;
+
 }
 
 .main-sel-down img {
     /* border:  1px solid red; */
-    width: 300px;
-    height: 200px;
-    margin-left: 100px;
-    margin-right: 50px;
-
+    width: 500px;
+    height: 300px;
+    margin: 0 100px;
+    border-radius: 12px;
 }
 
-.main-sel-down_text p {
-    font-size: 18px;
-    color: #6F5C4A;
-    margin-bottom: 40px;
+
+
+.main-sel-down p{
+    text-align: center;
+    color: #6a3224;;
+    font-size: 14px;
     line-height: 1.6;
+    margin-bottom: 40px;
+    position: absolute;
+    bottom: 268px;
+    right: -28px;
+
 }
+
+
+
+
 
 .main-sel-up_text a:hover {
-    background-color: #FFF1E4;
-    color: black;
-}
-
-/* ------------頁尾上面開始 ----------*/
-
-.footerup {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    /* border: 1px solid black; */
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.footerup p {}
-
-.footerup a {}
-
-.footerup>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 120px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
-
-}
-
-
-.footerupaboutus {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-    margin-right: 20px;
-
-}
-
-.footerupaboutus a {
-    text-decoration: none;
-    color: black;
-}
-
-.footerupaboutus a:hover {
-    text-decoration: underline
-}
-
-
-.footerupinformation {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-
-
-}
-
-.footerupinformation a {
-    text-decoration: none;
-    color: black;
-}
-
-.footerupinformation a:hover {
-    text-decoration: underline
-}
-
-.footerupcontact {
-    line-height: 1.6;
-    /* display: flex; */
-    /* justify-content: end; */
-}
-
-.footerupcontact a {
-    /* border: 1px solid red; */
-
-
-}
-
-.footerupcontact img {
-    width: 20px;
-    height: 20px;
-
-
-}
-
-
-
-/* -------頁尾下面開始--------- */
-
-.footerdown {
-    padding-bottom: 20px;
-}
-
-.footerdown p {
-    font-size: 12px;
-    text-align: center;
-    line-height: 1.6;
+    background-color: #FFF2E1;
+    color: #6a3224;
 }
