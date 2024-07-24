@@ -552,7 +552,7 @@ footer {
 }
 
 .footerup {
-
+    
 
     margin-bottom: 20px;
     background-color: #6a3224;
@@ -749,9 +749,47 @@ footer {
 }
 
 @media screen and (max-width:430px) {
+    .bigpicture{
+        margin-bottom: 0px;
+    }
+
+    .image{
+        width: 100%;
+        height: 200px;
+    }
+    .twopicturetwo {
+        display: none;
+    }
+
+  .mainaboutus p{
+    font-size: 14px;
+  }
+
+  .newnew{
+    flex-direction:column
+  }
+
+  .image-container{
+    width:80%;
+    height: 250px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .newright p{
+    font-size: 14px;
+  }
+
+  .newright a{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+    
     .top5 {
         background-color: #fcf6f0;
-        width: 20%;
+        width: 83%;
         margin: 0 auto;
         margin-bottom: 120px;
         position: relative;
@@ -764,8 +802,8 @@ footer {
     }
 
     .top5picture img {
-        width: 430px;
-        height: 300px;
+        width: 300px;
+        height: 230px;
     }
 
     .buttonright {
@@ -779,13 +817,24 @@ footer {
     }
 
     .maindown img {
-        width: 430px;
-        height: 300px;
+        width: 330px;
+        height: 250px;
+        margin-bottom: 0;
+        margin-bottom: 65px;
+
     }
 
     .maindown .maindown-english {
+        margin: 0;
         font-size: 24px;
-        left: 47%;
+        left: 49%;
+        top: 64%;
+    }
+
+    .maindown .maindown-chinese {
+        left: 200px;
+        top: 69%;
+        margin: 10px;
     }
 
     .maindown p {
@@ -797,4 +846,25 @@ footer {
         height: 25px;
         font-size: 18px;
     }
+
+    
+.footerup>img{
+    width: 50px;
+    height: 50px;
+    
+
+}
+
+.footerupcontact{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footerupright{
+    font-size: 11px;
+}
+
+.footerdown p{
+    font-size: 8px;
+}
 }

@@ -2,14 +2,16 @@
 @import url(./updown.css);
 
 /* ----------------主頁開始---------------- */
+
 .main-sel {
     background-color: #FFF2E1;
     padding-top: 120px;
+    
 }
 
 .main-white {
     /* border:  1px solid red; */
-    width: 1000px;
+    width: 100%;
     /* background-color: white; */
     margin: 0 auto;
     /* padding: 100px;
@@ -223,3 +225,133 @@
 }
 
 
+/* ------------(RWD 820 430)------------------- */
+@media screen and (max-width:820px){
+    .concept {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .conceptname{
+    margin: 0;
+      
+        
+    }
+
+    .concept>img{
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        
+        
+    }
+
+    .conceptname h3{
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      
+    }
+
+    .conceptname p{
+        margin-right: 10px;
+    }
+
+    .environmental{
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .environmental li img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .environmental h3{
+        font-size: 30px;
+    }
+
+    .environmental h4{
+        display: block;
+    }
+
+    .product1 h3{
+        font-size: 30px;
+    }
+
+    .product1 img{
+        width: 250px;
+        height: 180px;
+    }
+
+
+}
+
+@media screen and (max-width:430px){
+.main-sel{
+    width: 100%;
+}
+
+.concept{
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 20%;
+
+}
+
+
+
+.concept>img{
+    margin-bottom: 20px;
+}
+
+.conceptname h3{
+    border-bottom: 0 ;
+    border-left: 3px dashed #6a3224;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.conceptname p{
+    margin-bottom: 30px;
+}
+
+.environmental h3{
+    border-bottom: 0 ;
+    border-left: 3px dashed #6a3224;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.environmental-img-h4{
+    flex-direction: column;
+
+}
+
+.environmental {
+    display: block;
+    
+}
+
+.environmental li img{
+    height: 100px;
+    width: 100px;
+}
+
+.product1 h3{
+    border-bottom: 0 ;
+    border-left: 3px dashed #6a3224;
+    text-align: left;
+    padding-left: 10px;
+
+}
+.product1 img{
+    margin-bottom: 20px;
+}
+
+
+}
