@@ -2,6 +2,9 @@
 @import url(./updown.css);
 
 /* ----------------主頁開始---------------- */
+.wrapper{
+    width: 100%;
+}
 
 .main-sel {
     background-color: #FFF2E1;

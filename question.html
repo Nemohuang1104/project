@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/question.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
     <title>question</title>
 </head>
 
@@ -17,10 +18,12 @@
                 <p>新用戶享不限金額免運費 ，立即註冊</p>
             </div>
 
+
             <div class="headerdown">
                 <a href="./index.html" class="mainlogo"><img src="./img/logo02.png" alt=""></a>
-                <ul>
-                    <li><a href="./newproduct.html">Latest News</a></li>
+                <ul id="activeopen" class="transition">
+                    <li><a href="./newproduct.html">Latest
+                            News</a></li>
                     <li><a href="./introduction.html">About us</a></li>
                     <li><a href="./listtotal.html">Products
                             story</a></li>
@@ -29,7 +32,11 @@
                 </ul>
                 <a href="./login.html" class="memberlogo"><img src="./img/frontpage25.png" alt=""></a>
                 <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage29.png" alt=""></a>
-
+                <div class="threebar">
+                    <div class="bar bar1 transition"></div>
+                    <div class="bar bar2 transition"></div>
+                    <div class="bar bar3 transition"></div>
+                </div>
             </div>
 
         </header> <!--頁首結束 -->
@@ -120,32 +127,8 @@
 
         </footer> <!--頁尾結束-->
     </div> <!--最外層包裝結束 -->
+    <script src="./js/question.js"></script>
 
-    <script>
-        let arrows = document.getElementsByClassName("arrow");
-
-for (let i = 0; i < arrows.length; i++) {
-    arrows[i].addEventListener("click", function() {
-        // Loop through all arrows and close them, except the current one
-        for (let j = 0; j < arrows.length; j++) {
-            if (arrows[j] !== this) {
-                arrows[j].classList.remove("active");
-                let otherAnswer = arrows[j].nextElementSibling;
-                otherAnswer.style.maxHeight = null;
-            }
-        }
-
-        // Toggle the current arrow
-        this.classList.toggle("active");
-        let answer = this.nextElementSibling;
-        if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
-        } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-        }
-    });
-}
-    </script>
 
 
 
@@ -153,10 +136,3 @@ for (let i = 0; i < arrows.length; i++) {
 
 </html>
 
-
-// 如果需要開啟一個就關閉前一個，就加入以下：
-const active = document.querySelectorAll('.active');
-Array.prototype.forEach.call(active, act => {
-  act.classList.remove('active');
-  act.parentNode.querySelector('.contents-box').setAttribute('style', 'height: 0');
-})

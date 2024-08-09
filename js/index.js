@@ -1,3 +1,17 @@
+// 漢堡
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.threebar').addEventListener('click', function() {
+            this.classList.toggle('active');
+                });
+            });
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.threebar').addEventListener('click', function() {
+        var element = document.getElementById("activeopen");
+        element.classList.toggle('active');
+                  });
+            });
+                
+
 //大圖輪播 
 $(function () {
     let divWidth = $('.bigpicture').width()
@@ -84,3 +98,7 @@ header.addClass(".scroll")
 }else { 
 header.removeClass(".scroll")
 }
+
+
+
+

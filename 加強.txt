@@ -1,0 +1,37 @@
+float                     1.漂浮移動包含(:left；:right)，會在版面上飄浮起來。
+                          2.子層(overflow: hidden; 來讓消失的高度還原完本的高度)
+                          3.下面一層(clear:both 來讓後方跑上來的區塊回到正確位置)
+                          
+
+
+display:block             1.區塊模式
+
+display:inline-block      1.與float相同，可將水平排列，但僅限於同時對齊
+                          2.如有空格出現時需再父層加font-size:O(但會使文字和空格都會消
+                            失)，所以後面font-size的再補給他
+                          3.想要置中物件，可以使用text-align:center(此通常用於文字對齊)
+
+text-align:center         1.可被控制的話(圖或文字)就是行內元素  
+
+img                       1.為行內元素，加上display:block;，對外觀沒有影響
+                          2.但可以變成區塊元素後，透過margin: o auto;去將他置中  
+
+a連結                     1.加上display: block; 變成區塊元素(就可以出現最大寬度)，
+                            避免掉移標要觸碰到文字才能做反應，
+                          2.通常會搭配margin:0 auto */
+                          3.放上前面的雪碧座標(X Y)(為負值)
+                           .nav .btn1 a{ background-position: 0 0; }
+                           .nav .btn2 a{ background-position: 0 -50px; }
+                           .nav .btn3 a{ background-position: 0 -100px; }
+                           .nav .btn4 a{ background-position: 0 -150px; }
+                           .nav .btn5 a{ background-position: 0 -200px; }
+
+%                         1.要有數據依據，通常會往上(父層)尋找有定義的大小去做計算。
+
+em                        1.於父層需要有固定的數據，這樣可以透過父層與下面層的關係，進行
+                            基礎倍率值更改，這樣就可以一次改掉所有的em
+                          2.為相對單位
+                           
+display:flex              1.與display:inline-block、folat 相同  
+    
+                          

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/frontpage.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>frontpage</title>
 </head>
 
@@ -19,7 +20,7 @@
 
             <div class="headerdown">
                 <a href="./index.html" class="mainlogo"><img src="./img/logo02.png" alt=""></a>
-                <ul>
+                <ul id="activeopen" class="transition">
                     <li><a href="./newproduct.html">Latest
                             News</a></li>
                     <li><a href="./introduction.html">About us</a></li>
@@ -30,7 +31,11 @@
                 </ul>
                 <a href="./login.html" class="memberlogo"><img src="./img/frontpage25.png" alt=""></a>
                 <a href="./shoppimgcar.html" class="shoppinglogo"><img src="./img/frontpage29.png" alt=""></a>
-
+                <div class="threebar">
+                    <div class="bar bar1 transition"></div>
+                    <div class="bar bar2 transition"></div>
+                    <div class="bar bar3 transition"></div>
+                </div>
             </div>
 
         </header> <!--頁首結束 -->
@@ -64,9 +69,11 @@
                         <img src="./img/frontpage03.jpg" alt="" class="twopicturetwo">
                     </span>
                     <h3>About us</h3>
+
                     <p>
-                        宅抒室給你像家一樣舒服自在的氛圍，希望透過香味<br>讓每一位顧客在收到香氛蠟燭後也能感受到愉悅放鬆的<br>而我們選用的材料為天然的大豆蠟以及環保材質<br>歡迎大家一同身歷其境吧
+                        宅抒室給你像家一樣舒服自在的氛圍，希望透過香味讓每一位顧客在收到香氛蠟燭後也能感受到愉悅放鬆的而我們選用的材料為天然的大豆蠟以及環保材質歡迎大家一同身歷其境吧
                     </p>
+
                 </div> <!--關於我們結束-->
 
                 <div class="newnew"> <!--新品來了開始-->
@@ -75,10 +82,10 @@
                         <p class="newnewtimgtext">無限耍廢<br>VEGOUT</p>
                         <div class="newline"></div>
                     </div>
-                    
+
                     <div class="newright">
                         <h3> ღ New product ღ</h3>
-                        <p>在繁忙壓力過大的狀態<br>是不是也想耍廢呢?<br>最新一款「無限耍廢」<br>黑茶木質調/迷迭香/東菱玉<br>快點來點選商品連結。
+                        <p>在繁忙壓力過大的狀態是不是也想耍廢呢?<br>最新一款「無限耍廢」<br>黑茶木質調/迷迭香/東菱玉<br>快點來點選商品連結。
                         </p>
                         <a href="./newproduct.html">新商品連結</a>
                     </div>
@@ -163,7 +170,7 @@
 
     </div> <!--最外層包裝結束 -->
     <script src="./js/index.js"></script>
-    
+
 
 </body>
 
